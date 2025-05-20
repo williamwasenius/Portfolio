@@ -1,1 +1,102 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+}
 
+/* General body background */
+body {
+    background: linear-gradient(to bottom, #010041 0%, #ffffff 20%, #ffffff 80%, #010041 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Header and Footer */
+.HeaderBackground,
+.FooterBackground {
+    background-color: #010041;
+    color: #ffffff;
+    padding: 1em;
+}
+
+    .HeaderBackground h1 {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .HeaderBackground a,
+    .FooterBackground a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .HeaderBackground ul,
+    .FooterBackground ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5em;
+        justify-content: center;
+        padding-top: 0.5em;
+    }
+
+/* Centered main content area */
+main {
+    max-width: 900px;
+    background-color: #ffffff;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel-specific styling */
+.Pannel h1 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.IntroSection {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.IndexImage {
+    width: 200px; 
+    border-radius: 10px;
+    flex-shrink: 0; 
+}
+
+.TextBlock {
+    max-width: 300px;
+}
+
+.Pannel a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Text {
+    text-align: center;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.link {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+/* Hover effect for links */
+a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
